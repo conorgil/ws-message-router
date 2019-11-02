@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "tsc",
-    "server": "tsc && node ./dist/server/server.js"
+    "server": "tsc && node ./dist/server/server.js",
+    "release": "npm install && docker build . -t ws-message-router"
   },
   "dependencies": {
     "express": "^4.17.1",
